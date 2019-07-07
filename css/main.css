@@ -333,26 +333,26 @@ body {
 
 .cookbook {
   display: inline-block; }
-
-.cookbook__header {
-  color: #3BB9EB;
-  font-weight: normal;
-  margin: 40px 0 0;
-  text-align: center; }
+  .cookbook__header {
+    color: #3BB9EB;
+    font-weight: normal;
+    margin: 40px 0 0;
+    text-align: center; }
 
 .footer {
   font-size: 12px;
   margin: 40px auto;
   text-align: center; }
-
-.footer__paragraph {
-  display: inline; }
-
-.footer__top {
-  bottom: 10px;
-  padding: 5px;
-  position: fixed;
-  right: 10px; }
+  .footer__paragraph {
+    display: inline; }
+  .footer__top {
+    color: #6FB62A;
+    font-size: initial;
+    text-decoration: none;
+    bottom: 10px;
+    padding: 5px;
+    position: fixed;
+    right: 10px; }
 
 .header {
   background: #FFFDCF;
@@ -371,20 +371,14 @@ body {
   padding-top: 32px;
   width: 80vw; }
 
-.navigation__link,
-.recipe__link,
-.footer__top {
+.navigation__link {
   color: #6FB62A;
-  font-size: initial; }
+  font-size: initial;
+  text-decoration: none; }
 
 .navigation__item {
   display: block;
   margin: 0 16px; }
-
-.navigation__link,
-.recipe__link,
-.footer__top {
-  text-decoration: none; }
 
 .navigation__list {
   -webkit-box-align: center;
@@ -399,36 +393,37 @@ body {
   list-style: none;
   padding: 0; }
 
-.recipe__header {
-  color: #C53C8E;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5em;
-  font-style: italic;
-  font-weight: 700;
-  margin-bottom: 0.5em; }
-
-.recipe__image {
-  display: block;
-  margin: 20px auto;
-  max-width: 600px;
-  width: 100%; }
-
-.recipe__ornament {
-  border-bottom: 2px dashed #3BB9EB; }
-
-.recipe__paragraph {
-  line-height: 20px;
-  margin-top: 0; }
-
-.recipe__paragraph--right {
-  text-align: right; }
-
-.recipe__preview {
-  height: 20vh;
-  margin: 0 0 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%; }
+.recipe {
+  padding-top: 8px; }
+  .recipe__header {
+    color: #C53C8E;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 0.5em; }
+  .recipe__image {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%; }
+  .recipe__link {
+    color: #6FB62A;
+    font-size: initial;
+    text-decoration: none; }
+  .recipe__ornament {
+    border-bottom: 2px dashed #3BB9EB; }
+  .recipe__paragraph {
+    line-height: 20px;
+    margin-top: 0; }
+    .recipe__paragraph--right {
+      text-align: right; }
+  .recipe__preview {
+    height: 20vh;
+    margin: 0 0 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%; }
 
 @media screen and (min-width: 500px) {
   .footer {
@@ -477,17 +472,24 @@ body {
 @media screen and (min-width: 2560px) {
   body, .footer {
     font-size: 1.5rem; }
-  .cookbook__grid,
+  .cookbook__grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px; }
+  .footer__top {
+    font-size: inherit; }
+  .navigation,
+  .navigation__link {
+    font-size: inherit; }
   .recipe__gallery {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 30px; }
-  .navigation,
-  .navigation__link,
-  .recipe__link,
-  .footer__top {
+  .recipe__link {
     font-size: inherit; }
   .recipe__paragraph {
     line-height: 28px; } }
@@ -505,15 +507,17 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
-  .navigation__list--visible {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
+            flex-direction: column;
+    margin: 0; }
+    .navigation__list--home {
+      display: none; }
+    .navigation__list--visible {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
   .navigation__switcher {
     border: none;
     height: 22px;
