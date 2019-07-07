@@ -1,2 +1,10 @@
-$violet: #2D2241;
-$yellow: #F9C802;
+$yellow: #FFFDCF;
+$blue: #3BB9EB;
+$green: #6FB62A;
+$pink: #C53C8E;
+
+@mixin links {
+  color: $green;
+  font-size: initial;
+  text-decoration: none;
+}
