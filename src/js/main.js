@@ -24,6 +24,7 @@ function welcome(name, age) {
 
 welcome('Kasia', 36);
 
+// hamburger menu
 const navigationSwitcher = document.querySelector('.navigation__switcher--js')
 
 navigationSwitcher.addEventListener('click', (e) => {
