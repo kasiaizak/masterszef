@@ -16,18 +16,35 @@ body {
   background-attachment: fixed;
   background-image: linear-gradient( 135deg, rgba(255, 249, 134, 0.4) 10%, rgba(240, 114, 181, 0.5) 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  @media screen and (min-width: 2560px) {
+    font-size: 1.5rem;
+  }
 }
 
-.about__image {
-  box-sizing: border-box;
-  float: left;
-  max-width: 150px;
-  padding: 0 10px 5px 0;
-  width: 25%;
+.about{
+  $__image {
+    box-sizing: border-box;
+    float: left;
+    max-width: 150px;
+    padding: 0 10px 5px 0;
+    width: 25%;
+  }
 }
 
 .cookbook {
   display: inline-block;
+  &__grid {
+    @media screen and (min-width: 1024px) {
+      display: grid;
+      grid-column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 2560px) {
+      display: grid;
+      grid-column-gap: 30px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
   &__header {
     color: $blue;
     font-weight: normal;
@@ -49,6 +66,15 @@ body {
     padding: 5px;
     position: fixed;
     right: 10px;
+    @media screen and (min-width: 2560px) {
+      font-size: inherit;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    margin: 40px auto 16px;
+  }
+  @media screen and (min-width: 2560px) {
+    font-size: 1.5rem;
   }
 }
 
@@ -58,13 +84,23 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  @media screen and (max-width: 352px) {
+    min-height: 48px;
+  }
 }
 
-.ingredients__header,
-.preparation__header {
-  color: $blue;
-  font-size: 1.2em;
+.ingredients {
+  &__header {
+    color: $blue;
+    font-size: 1.2em;
+  }
+  &__list {
+    @media screen and (min-width: 768px) {
+      padding-left: 20px;
+    }
+  }
 }
+
 
 .main {
   margin: 0 auto;
@@ -75,10 +111,16 @@ body {
 .navigation {
   &__link {
     @include links;
+    @media screen and (min-width: 2560px) {
+      font-size: inherit;
+    }
   }
   &__item {
     display: block;
     margin: 0 16px;
+    @media screen and (max-width: 352px) {
+      margin: 16px;
+    }
   }
   &__list {
     align-items: center;
@@ -86,11 +128,68 @@ body {
     justify-content: center;
     list-style: none;
     padding: 0;
+    &--home {
+      @media screen and (max-width: 352px) {
+        display: none;
+      }
+    }
+    &--visible {
+      @media screen and (max-width: 352px) {
+        display: flex;
+      }
+    }
+    @media screen and (max-width: 352px) {
+      align-items: flex-start;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+  &__switcher {
+    @media screen and (max-width: 352px) {
+      border: none;
+      height: 22px;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      width: 22px;
+    }
+    @media screen and (min-width: 353px) {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 2560px) {
+    font-size: inherit;
+  }
+}
+
+.preparation {
+  &__header {
+    color: $blue;
+    font-size: 1.2em;
   }
 }
 
 .recipe {
   padding-top: 8px;
+  &__gallery {
+    @media screen and (min-width: 1440px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+    }
+    @media screen and (min-width: 2560px) {
+      display: grid;
+      grid-column-gap: 30px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  &__grid {
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-column-gap: 20px;
+      grid-template-columns: 1fr 2fr;
+    }
+  }
   &__header {
     color: $pink;
     font-family: 'Playfair Display', serif;
@@ -104,9 +203,26 @@ body {
     margin: 20px auto;
     max-width: 600px;
     width: 100%;
+    &--introduction {
+      @media screen and (min-width: 768px) {
+        float: right;
+        margin: 0;
+        width: 45%;
+      }
+      @media screen and (min-width: 1440px) {
+        width: 45%;
+      }
+    }
+  &__introduction {
+    @media screen and (min-width: 768px) {
+      display: inline-block
+    }
   }
   &__link {
     @include links;
+    @media screen and (min-width: 2560px) {
+      font-size: inherit;
+    }
   }
   &__ornament {
     border-bottom: 2px dashed $blue;
@@ -114,8 +230,21 @@ body {
   &__paragraph {
     line-height: 20px;
     margin-top: 0;
+    &--introduction {
+      @media screen and (min-width: 768px) {
+        display: block;
+        float: left;
+        width: 50%;
+      }
+      @media screen and (min-width: 1440px) {
+        width: 50%;
+      }
+    }
     &--right {
       text-align: right;
+    }
+    @media screen and (min-width: 2560px) {
+      line-height: 28px;
     }
   }
   &__preview {
@@ -123,136 +252,5 @@ body {
     margin: 0 0 10px;
     object-fit: cover;
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .footer {
-      margin: 40px auto 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .ingredients {
-    &__list {
-      padding-left: 20px;
-    }
-  }
-
-  .recipe {
-    &__image--introduction {
-      width: 45%;
-      float: right;
-      margin: 0;
-    }
-    &__introduction {
-      display: inline-block
-    }
-    &__grid {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      grid-column-gap: 20px;
-    }
-    &__paragraph--introduction {
-      display: block;
-      width: 50%;
-      float: left;
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .cookbook__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .recipe{
-    &__gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 20px;
-    }
-    &__image--introduction {
-      width: 45%;
-    }
-    &__paragraph--introduction {
-      width: 50%;
-    }
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  body, .footer {
-    font-size: 1.5rem;
-  }
-
-  .cookbook__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-  }
-
-  .footer__top {
-    font-size: inherit;
-  }
-
-  .navigation,
-  .navigation__link {
-    font-size: inherit;
-  }
-
-  .recipe {
-    &__gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 30px;
-    }
-    &__link {
-      font-size: inherit;
-    }
-    &__paragraph {
-      line-height: 28px;
-    }
-  }
-}
-
-@media screen and (min-width: 353px) {
-  .navigation__switcher {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 352px) {
-  .header {
-    min-height: 48px;
-  }
-
-  .navigation {
-    &__item {
-      margin: 16px;
-    }
-    &__list {
-      align-items: flex-start;
-      flex-direction: column;
-      margin: 0;
-      &--home {
-        display: none;
-      }
-      &--visible {
-        display: flex;
-      }
-    }
-    &__switcher {
-      border: none;
-      height: 22px;
-      position: absolute;
-      right: 16px;
-      top: 16px;
-      width: 22px;
-    }
   }
 }
