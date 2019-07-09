@@ -213,24 +213,25 @@ body {
         width: 45%;
       }
     }
-    &__introduction {
+  }
+  &__introduction {
       @media screen and (min-width: 768px) {
-       display: inline-block
+        display: inline-block
       }
-    }
-    &__link {
+  }
+  &__link {
       @include links;
       @media screen and (min-width: 2560px) {
         font-size: inherit;
       }
-    }
-    &__ornament {
-      border-bottom: 2px dashed $blue;
-    }
-    &__paragraph {
-      line-height: 20px;
-      margin-top: 0;
-      &--introduction {
+  }
+  &__ornament {
+    border-bottom: 2px dashed $blue;
+  }
+  &__paragraph {
+    line-height: 20px;
+    margin-top: 0;
+    &--introduction {
         @media screen and (min-width: 768px) {
           display: block;
           float: left;
@@ -239,19 +240,18 @@ body {
         @media screen and (min-width: 1440px) {
           width: 50%;
         }
-      }
-      &--right {
-        text-align: right;
-      }
-      @media screen and (min-width: 2560px) {
-        line-height: 28px;
-      }
     }
-    &__preview {
+    &--right {
+        text-align: right;
+    }
+    @media screen and (min-width: 2560px) {
+        line-height: 28px;
+    }
+  }
+  &__preview {
       height: 20vh;
       margin: 0 0 10px;
       object-fit: cover;
       width: 100%;
-    }
   }
 }
