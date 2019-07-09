@@ -513,39 +513,39 @@ body {
     @media screen and (min-width: 1440px) {
       .recipe__image--introduction {
         width: 45%; } }
+  @media screen and (min-width: 768px) {
+    .recipe__introduction {
+      display: inline-block; } }
+  .recipe__link {
+    color: #6FB62A;
+    font-size: initial;
+    text-decoration: none; }
+    @media screen and (min-width: 2560px) {
+      .recipe__link {
+        font-size: inherit; } }
+  .recipe__ornament {
+    border-bottom: 2px dashed #3BB9EB; }
+  .recipe__paragraph {
+    line-height: 20px;
+    margin-top: 0; }
     @media screen and (min-width: 768px) {
-      .recipe__image__introduction {
-        display: inline-block; } }
-    .recipe__image__link {
-      color: #6FB62A;
-      font-size: initial;
-      text-decoration: none; }
-      @media screen and (min-width: 2560px) {
-        .recipe__image__link {
-          font-size: inherit; } }
-    .recipe__image__ornament {
-      border-bottom: 2px dashed #3BB9EB; }
-    .recipe__image__paragraph {
-      line-height: 20px;
-      margin-top: 0; }
-      @media screen and (min-width: 768px) {
-        .recipe__image__paragraph--introduction {
-          display: block;
-          float: left;
-          width: 50%; } }
-      @media screen and (min-width: 1440px) {
-        .recipe__image__paragraph--introduction {
-          width: 50%; } }
-      .recipe__image__paragraph--right {
-        text-align: right; }
-      @media screen and (min-width: 2560px) {
-        .recipe__image__paragraph {
-          line-height: 28px; } }
-    .recipe__image__preview {
-      height: 20vh;
-      margin: 0 0 10px;
-      -o-object-fit: cover;
-         object-fit: cover;
-      width: 100%; }
+      .recipe__paragraph--introduction {
+        display: block;
+        float: left;
+        width: 50%; } }
+    @media screen and (min-width: 1440px) {
+      .recipe__paragraph--introduction {
+        width: 50%; } }
+    .recipe__paragraph--right {
+      text-align: right; }
+    @media screen and (min-width: 2560px) {
+      .recipe__paragraph {
+        line-height: 28px; } }
+  .recipe__preview {
+    height: 20vh;
+    margin: 0 0 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
