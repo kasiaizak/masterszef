@@ -1,6 +1,6 @@
 # Gotuję jak Masterszef ;)
 
-Moja książku kucharska (strona jest w trakcie budowy) - [widok on-line](https://kasiaizak.github.io/masterszef/)
+Moja "książka kucharska" (strona jest w trakcie budowy) - [widok on-line](https://kasiaizak.github.io/masterszef/)
 
 ## Wykorzystane technologie:
 
