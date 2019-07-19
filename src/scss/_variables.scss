@@ -1,7 +1,10 @@
-$yellow: #FFFDCF;
 $blue: #3BB9EB;
+$borderLink: desaturate(rgb(148, 223, 74), 40%);
 $green: #6FB62A;
 $pink: #C53C8E;
+$yellow: #FFFDCF;
+
+$animate: all 0.2s ease-in-out;
 
 @mixin links {
   color: $green;
