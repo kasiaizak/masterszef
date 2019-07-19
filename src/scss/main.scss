@@ -172,6 +172,15 @@ body {
 
 .recipe {
   padding-top: 8px;
+  &::after {
+    content: "* * *";
+    color: $blue;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
   &__gallery {
     @media screen and (min-width: 1440px) {
       display: grid;
@@ -225,7 +234,7 @@ body {
     position: relative;
     transition: $animate;
     &::after {
-      background-color: $borderLink;
+      background-color: $animationLink;
       right: 0;
     }
     &::after, &::before {
@@ -248,9 +257,6 @@ body {
     @media screen and (min-width: 2560px) {
       font-size: inherit;
     }
-  }
-  &__ornament {
-    border-bottom: 2px dashed $blue;
   }
   &__paragraph {
     line-height: 20px;
