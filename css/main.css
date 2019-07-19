@@ -473,6 +473,18 @@ body {
 
 .recipe {
   padding-top: 8px; }
+  .recipe::after {
+    content: "* * *";
+    color: #3BB9EB;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   @media screen and (min-width: 1440px) {
     .recipe__gallery {
       display: -ms-grid;
@@ -520,12 +532,34 @@ body {
   .recipe__link {
     color: #6FB62A;
     font-size: initial;
-    text-decoration: none; }
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .recipe__link::after {
+      background-color: #94b475;
+      right: 0; }
+    .recipe__link::after, .recipe__link::before {
+      bottom: -10px;
+      content: "";
+      height: 2px;
+      margin: 5px 0 0;
+      opacity: 0;
+      position: absolute;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition-duration: 0.75s;
+           -o-transition-duration: 0.75s;
+              transition-duration: 0.75s;
+      width: 0px; }
+    .recipe__link:hover:after, .recipe__link:hover:before {
+      opacity: 1;
+      width: 100%; }
     @media screen and (min-width: 2560px) {
       .recipe__link {
         font-size: inherit; } }
-  .recipe__ornament {
-    border-bottom: 2px dashed #3BB9EB; }
   .recipe__paragraph {
     line-height: 20px;
     margin-top: 0; }
