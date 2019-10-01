@@ -386,7 +386,8 @@ body {
   left: 0;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   @media screen and (max-width: 352px) {
     .header {
       min-height: 48px; } }
