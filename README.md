@@ -1,10 +1,12 @@
+![cover](https://raw.githubusercontent.com/kasiaizak/masterszef/master/src/assets/img/cover.png)
+
 # Gotuję jak Masterszef ;)
 
 Moja "książka kucharska" - [widok on-line](https://kasiaizak.github.io/masterszef/)
 
-## Wykorzystane technologie
+## Użyte technologie
 
-HTML5, CSS3 (w tym grid) z użyciem preprocesora SASS oraz JavaScript.
+HTML5, CSS3 (w tym Flexbox i Grid) z użyciem preprocesora Sass oraz JavaScript ES6.
 
 ## Podgląd strony
 
