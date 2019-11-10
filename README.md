@@ -10,7 +10,7 @@ HTML5, CSS3 (w tym Flexbox i Grid) z użyciem preprocesora Sass oraz JavaScript 
 
 ## Podgląd strony
 
-![Screenshot](https://raw.githubusercontent.com/kasiaizak/masterszef/master/github/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/kasiaizak/masterszef/master/github/screenshot.jpg)
 
 ## Uruchomienie strony lokalnie z podglądem zmian na żywo (dla developerów korzystających z Node.js)
 
