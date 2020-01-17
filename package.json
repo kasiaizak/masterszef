@@ -21,13 +21,13 @@
   "devDependencies": {
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.8.3",
-    "@babel/polyfill": "^7.6.0",
+    "@babel/polyfill": "^7.8.3",
     "@babel/preset-env": "^7.6.2",
     "autoprefixer": "^9.7.1",
-    "@babel/register": "^7.7.0",
+    "@babel/register": "^7.8.3",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^2.2.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
@@ -38,7 +38,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "node-sass": "^4.13.0",
-    "webpack": "^4.41.2",
+    "webpack": "^4.41.5",
     "webpack-stream": "^5.2.1"
   },
   "babel": {
@@ -47,8 +47,8 @@
     ]
   },
   "dependencies": {
-    "browser-update": "^3.3.1",
-    "eslint": "^6.6.0",
+    "browser-update": "^3.3.9",
+    "eslint": "^6.8.0",
     "moment": "^2.24.0"
   }
 }
