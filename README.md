@@ -2,7 +2,7 @@
 
 # Gotuję jak Masterszef ;)
 
-Moja "książka kucharska" - [widok on-line](https://kasiaizak.github.io/masterszef/)
+Moja "książka kucharska" - [widok on-line](https://masterszef.kasiaizak.pl/)
 
 ## Użyte technologie
 
